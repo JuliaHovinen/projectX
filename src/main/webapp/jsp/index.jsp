@@ -24,50 +24,27 @@
 <s:text name="test"/>
 <s:property value="getText('test')"/>
 
-
-<body ng-app="userContactApp" ng-controller="mainController">
+<body>
 <section id="user-contact">
     <div class="container">
         <div class="row">
             <h1>Kontaktandmed</h1>
-            <form name="userContactForm" ng-submit="submitForm()" novalidate>
-                <div class="form-group"
-                     ng-class="{ 'has-error' : userContactForm.name.$invalid && !userContactForm.name.$pristine }">
-                    <p ng-show="userContactForm.name.$invalid && !userContactForm.name.$pristine" class="help-block">
-                        Teie nimi on nõutav.</p>
+            <form name="userContactForm" novalidate>
+                <div class="form-group">
                     <label>Ees- ja perenimi</label>
-                    <input type="text" name="name" class="form-control" ng-model="user.name" required>
+                    <input type="text" name="name" class="form-control" required>
                 </div>
-                <div class="form-group"
-                     ng-class="{ 'has-error' : (userContactForm.email.$invalid && !userContactForm.email.$pristine) &&
-                      ((userContactForm.email.$invalid && !userContactForm.email.$pristine)||
-                     userContactForm.email.$pristine)}">
+                <div class="form-group">
                     <label>Telefon</label>
-                    <input type="text" name="telephone" class="form-control"
-                           ng-model="ContactDataForm.telephone" required>
-                    <p ng-show="(userContactForm.telephone.$invalid && !userContactForm.telephone.$pristine)&&
-                    ((userContactForm.email.$invalid && !userContactForm.email.$pristine)|| userContactForm.email.$pristine)"
-                       class="help-block">
-                        Sisesta kehtiv telefon.</p>
+                    <input type="text" name="telephone" class="form-control" required>
                 </div>
-                <div class="form-group"
-                     ng-class="{ 'has-error' : (userContactForm.telephone.$invalid && !userContactForm.telephone.$pristine) &&
-                      ((userContactForm.email.$invalid && !userContactForm.email.$pristine) ||
-                      (userContactForm.telephone.$pristine)))}">
+                <div class="form-group">
                     <label>E-post</label>
-                    <input type="email" name="email" class="form-control" ng-model="user.email" required>
-                    <p ng-show="(userContactForm.email.$invalid && !userContactForm.email.$pristine)&&
-                    ((userContactForm.email.$invalid && !userContactForm.email.$pristine) || (userContactForm.telephone.$pristine))"
-                       class="help-block">
-                        Sisesta kehtiv email.</p>
+                    <input type="email" name="email" class="form-control" required>
                 </div>
-                <div class="form-group"
-                     ng-class="{ 'has-error' : userContactForm.address.$invalid && !userContactForm.address.$pristine }">
+                <div class="form-group">
                     <label>Tänav, maja, korter</label>
-                    <input type="text" name="address" class="form-control" ng-model="ContactDataForm.address" required>
-                    <p ng-show="userContactForm.address.$invalid && !userContactForm.address.$pristine"
-                       class="help-block">
-                        Teie tänav, maja ja korter on nõutav.</p>
+                    <input type="text" name="address" class="form-control"  required>
                 </div>
                 <div class="form-group">
                     <label>Küla/alevik</label>
@@ -75,41 +52,36 @@
                 </div>
                 <div class="form-group">
                     <label>Linn/maakond</label>
-                    <select name="city" ng-model="userContactForm.city" class="form-control" required>
+                    <select name="city" class="form-control" required>
                         <option value="option-1">Tallinn</option>
                         <option value="option-2">Tartu</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <input type="radio" ng-model="userContactForm.whichDelivery.sameDelivery">
+                    <input type="radio">
                     <label>Kohaletoimetamine samaleaadressile</label>
-                    <input type="radio" ng-model="userContactForm.whichDelivery.">
+                    <input type="radio">
                     <label>Kohaletoimetamine erinevale aadressile</label>
                 </div>
-                <div ng-show="userContactForm.whichDelivery.difDelivery">
+                <div>
                     <div class="form-group">
                         <label>Tänav, maja, korter </label>
-                        <input type="text"
-                               name="deliveryAddress"
-                               ng-model="userContactForm" class="form-control" value="deliveryAddress">
+                        <input type="text" name="deliveryAddress" class="form-control" value="deliveryAddress">
                     </div>
                     <div class="form-group">
                         <label>Küla/alevik </label>
-                        <input type="text" name="deliveryVillage"
-                               ng-model="userContactForm" class="form-control" value="deliveryVillage">
+                        <input type="text" name="deliveryVillage" class="form-control" value="deliveryVillage">
                     </div>
                     <div class="form-group">
                         <label>Linn/maakond </label>
-                        <input type="text" name="deliveryCity" class="form-control"
-                               ng-model="userContactForm.deliveryCity">
+                        <input type="text" name="deliveryCity" class="form-control">
                     </div>
                 </div>
-
-                <div><input type="checkbox" ng-model="userContactForm.agreement" value="weeklyNews">
+                <div><input type="checkbox" value="weeklyNews">
                     <label>Olen tingimustega tutvunud</label></div>
 
-                <button type="submit" class="btn btn-primary" ng-disabled="userContactFormuserContactForm.$invalid">
+                <button type="submit" class="btn btn-primary">
                     Submit
                 </button>
             </form>
