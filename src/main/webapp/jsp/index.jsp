@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-group">
                     <label>Küla/alevik</label>
-                    <input type="text" name="village" class="form-control" ng-model="userContactForm.village">
+                    <input type="text" name="village" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Linn/maakond</label>
