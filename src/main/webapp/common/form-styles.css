@@ -1,3 +1,22 @@
-body {
-	padding-top : 30px;
+@media only screen and (min-width:960px){
+    .container{
+        width:500px;
+    }
+}
+.form-group label {
+    width: 150px;
+    display: inline-block!important;
+    text-align: right;
+    padding-right: 10px;
+}
+.form-group .form-control {
+    width: 300px;
+    display: inline-block!important;
+    height: 35px;
+    border-radius: 17px;
+}
+.form-group .grey {
+    background-color: #dcdcdc;
+    border: none;
+    box-shadow: none;
 }

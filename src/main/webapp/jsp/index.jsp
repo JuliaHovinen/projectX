@@ -32,7 +32,7 @@
             <form name="userContactForm" novalidate>
                 <div class="form-group">
                     <label>Ees- ja perenimi</label>
-                    <input type="text" name="name" class="form-control" required>
+                    <input type="text" name="name" class="form-control grey" required>
                 </div>
                 <div class="form-group">
                     <label>Telefon</label>
@@ -40,15 +40,15 @@
                 </div>
                 <div class="form-group">
                     <label>E-post</label>
-                    <input type="email" name="email" class="form-control" required>
+                    <input type="email" name="email" class="form-control grey" required>
                 </div>
                 <div class="form-group">
                     <label>Tänav, maja, korter</label>
-                    <input type="text" name="address" class="form-control"  required>
+                    <input type="text" name="address" class="form-control grey"  required>
                 </div>
                 <div class="form-group">
                     <label>Küla/alevik</label>
-                    <input type="text" name="village" class="form-control">
+                    <input type="text" name="village" class="form-control grey">
                 </div>
                 <div class="form-group">
                     <label>Linn/maakond</label>
@@ -67,11 +67,11 @@
                 <div>
                     <div class="form-group">
                         <label>Tänav, maja, korter </label>
-                        <input type="text" name="deliveryAddress" class="form-control" value="deliveryAddress">
+                        <input type="text" name="deliveryAddress" class="form-control grey" value="deliveryAddress">
                     </div>
                     <div class="form-group">
                         <label>Küla/alevik </label>
-                        <input type="text" name="deliveryVillage" class="form-control" value="deliveryVillage">
+                        <input type="text" name="deliveryVillage" class="form-control grey" value="deliveryVillage">
                     </div>
                     <div class="form-group">
                         <label>Linn/maakond </label>
