@@ -21,6 +21,10 @@
     <s:textfield key="userName" cssClass="form-control required"/>
 </s:form>
 
+<s:text name="test"/>
+<s:property value="getText('test')"/>
+
+
 <body ng-app="userContactApp" ng-controller="mainController">
 <section id="user-contact">
     <div class="container">
