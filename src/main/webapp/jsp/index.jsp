@@ -11,20 +11,15 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/form-styles.css">
     <!-- JS -->
-    <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"
+              integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+              crossorigin="anonymous"></script>
     <script src="js/form-app.js"></script>
-    <!-- then add controllers -->
-    <script src="form-data-controller.js"></script>
-    <script src="controller2.js"></script>
 </head>
 
 <s:form theme="xhtml" cssClass="form-login" action="contactData" method="POST">
     <s:textfield key="userName" cssClass="form-control required"/>
 </s:form>
-
-<s:text name="test"/>
-<s:property value="getText('test')"/>
-
 
 <body ng-app="userContactApp" ng-controller="mainController">
 <section id="user-contact">
