@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/form-styles.css">
     <!-- JS -->
-    <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
     <script src="js/form-app.js"></script>
-    <!-- then add controllers -->
-    <script src="form-data-controller.js"></script>
-    <script src="controller2.js"></script>
 </head>
 
 <s:form theme="xhtml" cssClass="form-login" action="contactData" method="POST">
@@ -49,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <label>Küla/alevik</label>
-                    <input type="text" name="village" class="form-control" ng-model="userContactForm.village">
+                    <input type="text" name="village" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Linn/maakond</label>
