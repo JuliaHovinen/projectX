@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+        <action name="contactData" method="contactData" class="test.action.PersonalDataAction">
+            <result name="success">/jsp/success.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="" class="com.opensymphony.xwork2.ActionSupport">
+            <result>/jsp/index.jsp</result>
+        </action>
+    </package>
+</struts>
