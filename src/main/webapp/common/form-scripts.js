@@ -1,6 +1,19 @@
-angular.module("myapp", [])
-    .controller("MyController", function($scope) {
-        $scope.myForm = {};
-        $scope.myForm.firstName = "Jain";
-        $scope.myForm.lastName  = "Lee";
-    } );
+// create angular app
+var contactDataApp = angular.module('userContactApp', []);
+
+// create angular controller
+contactDataApp.controller('mainController', function($scope) {
+
+    // function to submit the form after all validation has occurred            
+    $scope.submitForm = function() {
+
+        // check to make sure the form is completely valid
+        if ($scope.userForm.$valid) {
+            alert('our form is amazing');
+        } else{
+            alert("shit");
+        }
+
+    };
+
+});
