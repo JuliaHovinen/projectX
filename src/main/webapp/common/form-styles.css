@@ -1,16 +1,70 @@
+body{
+    font: normal 16px/1.4 Tahoma, Geneva, sans-serif;
+}
+h1{
+    text-align: center;
+    color:#74aae1;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+.container {
+    text-align: right;
+}
+
+.btn{
+    background-color: #5852fb;
+    width: 110px;
+    border-radius: 18px;
+}
+.btn:hover{
+    background-color: #4a44cc;
+}
+
 @media only screen and (min-width:960px){
     .container{
-        width:500px;
+        width:460px;
     }
 }
 .form-group label {
-    width: 150px;
-    display: inline-block!important;
-    text-align: right;
+    width: 130px;
     padding-right: 10px;
 }
+.form-group label {
+    display: inline-block!important;
+    text-align: right;
+    font-weight: normal;
+    font-size:smaller;
+    color:#333;
+}
+.radio-form{
+    margin-left: 150px;
+}
+.checkbox-form{
+    margin-left: 135px;
+}
+
+input[type=radio]{
+    width:15px;
+    height: 15px;
+}
+
+input[type=checkbox]{
+    width:15px;
+    height: 15px;
+}
+
+.radio-form label,
+.checkbox-form label{
+    text-align: left;
+}
+
+.form-group .form-control,
+.radio-form label,
+.checkbox-form label{
+    width:300px;
+}
 .form-group .form-control {
-    width: 300px;
     display: inline-block!important;
     height: 35px;
     border-radius: 17px;
