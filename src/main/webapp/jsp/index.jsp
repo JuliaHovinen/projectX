@@ -9,12 +9,12 @@
     <!-- CSS -->
     <!-- load bootstrap -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/form-styles.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/common/form-styles.css">
     <!-- JS -->
     <script   src="https://code.jquery.com/jquery-2.2.3.min.js"
               integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
               crossorigin="anonymous"></script>
-    <script src="js/form-app.js"></script>
+    <script src="${pageContext.request.contextPath}/common/form-app.js"></script>
 </head>
 
 <s:form theme="xhtml" cssClass="form-login" action="contactData" method="POST">
